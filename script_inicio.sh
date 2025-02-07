@@ -22,3 +22,7 @@ sudo groupadd docker
 
 # Add your user to the docker group.
 sudo usermod -aG docker $USER
+
+# Configure Docker to start on boot with systemd
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
